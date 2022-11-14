@@ -1,0 +1,29 @@
+.cabeceraima
+{
+  background-image: url("../img/Endo3.JPG");
+  padding: 4rem;
+  color: azure;
+  font-size: 2.8rem;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-image: url("../img/fondo1.png");
+    font-family: sans-serif;
+}
+
+section{
+    margin-top: 70%;
+    min-height: 50vh;
+}
+
+.card{
+    box-shadow: 5px 0 10px #333; 
+}
+
+.wrapper{
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
