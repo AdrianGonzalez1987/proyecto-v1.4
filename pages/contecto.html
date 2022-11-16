@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- para los iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    <!--fuentes-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Open+Sans:wght@300;500;600&family=Roboto:wght@100;500&display=swap"
+        rel="stylesheet">
+    <!--stilo css-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>CONTACTO</title>
+</head>
+
+<body class="decontacto">
+
+    <header>
+        <div class="cabeceraima">
+            <!--<img src="img/endocrino.jpg" alt="cabecera" >-->
+            <p>DRA. CORREA endocrinologa</p>
+        </div>
+            <div>
+                <nav class="navbar navbar-expand-sm navbar-dark p-3"> <!--navbar es la clase que usa bootstrap y navbar-expand-md es para que colapse-->
+                    <div class="container-fluid d-flex justify-content-center"> <!--contenedor de tipo fluid recomendado por bootstrap-->
+                
+            <!--boton del menu-->
+                
+                        <button class="navbar-toggler " 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#menu" 
+                            aria-controls="navbarSupportedContent" 
+                            aria-expanded="false" 
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> <!--en data-bs-target="va el nombre id del menu colapsable en este caso es id=menu por lo que data-bs-target="#menu""-->
+                    
+            <!--elementos del menu colapsable-->
+                        <div class="collapse navbar-collapse" id="menu"> <!--esta clase contiene los elementos del menu al colapsarce, -->
+            <!-- se deve de agregar el id en data-bs-target="#nombre_id" que esta en boton menu-->
+                            <ul class="navbar-nav me-auto"> <!--navbar-nav es la clase que aplica bootstrap a listas desordenadas, ms-auto coloca margenes al menu-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="esparati.html">¿ES PARA TI?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ubicacion.html">UBICACION</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="contecto.html">CONTACTO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="masinfo.html">+INFO</a>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+    </header>
+
+    <main class="container-fluid">
+        <section class="mt-4 p-3 ">
+            <div class="row mt-12 d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <h5 class="card-header">Contactanos:</h5>
+                            <div class="card-body">
+                                <form class="row g-3">
+
+                                    <div class="col-12">
+
+                                        <div class="row mb-2">
+                                         <div class="col">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                              <input type="text" class="form-control" placeholder="Nombre" aria-label="Escriba su Nombre" id="nombre" required>
+                                            
+                                            </div>
+                                            <div class="col">
+                                                <label for="apellido" class="form-label">Apellido</label>
+                                              <input type="text" class="form-control" placeholder="Apellido" aria-label="Escriba su Apellido" id="apellido" required>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 mt-3">
+                                            <label for="celular" class="form-label">Telefono o Celular</label>
+                                            <input type="text" class="form-control" placeholder="011 1234 6789" id="celular" maxlength="12" required>
+                                          </div>
+                                        
+                                        
+                                    <div class="mb-3">
+                                      <label for="inputEmail4" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="inputEmail4" placeholder="Escriba su correo electronico" required>
+                                    </div>
+
+                                    <div  class="form-check form-check-inline d-flex justify-content-between" required>
+                                    <div>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Hombre</label>
+                                      </div>
+                                      <div>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Mujer</label>
+                                      </div>
+                                      <div>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option3">
+                                        <label class="form-check-label" for="inlineRadio2">No Binario</label>
+                                      </div>
+                                    </div>
+                                    
+                                    
+                                      
+                                    <div class="mb-3 mt-3">
+                                        <label for="mensaje" class="form-label">Escriba su comentario</label>
+                                        <textarea class="form-control" id="mensaje"  col="20" rows="3" maxlength="500" placeholder="Escriba aqui su comentario" required></textarea>
+                                      </div>
+                                   
+                                    
+                                    
+                                    <div class="col-12">
+                                      <button type="submit" class="btn btn-primary">enviar</button>
+                                    </div>
+                                  </form>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+
+    <div class="container-fluid bg-black">
+        <footer class="row footerBg paddingTB wrapper">
+
+            <ul class=" navbar-nav flex-row flex-wrap justify-content-center text-light" >
+
+                <li class="nav-item col-3-auto  p-3  ">
+                    <i class="bi bi-twitter"></i>
+                </li>
+
+                <li class="nav-item col-3-auto  p-3">
+                    <i class="bi bi-instagram"></i>
+                    
+                </li>
+
+                <li class="nav-item col-3-auto  p-3">
+                    <i class="bi bi-whatsapp"></i>
+                </li>
+
+                <li class="nav-item col-3-auto  p-3">
+                    <i class="bi bi-facebook"></i>
+                    <!--<small class="d-md-none ms-2"></small>--> <!--para colocar nombres despues de ciertas medidas-->
+                </li>
+            </ul>
+
+            <hr class="text-white-50 "> <!--linea divisoria-->
+            <p class="text-white text-center">todos los derechos reservados</p> 
+
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -4,12 +4,12 @@
 
 .cabeceraima
 {
-  background-image: url("../img/Endo3.JPG");
-  padding: 40px;
-  color: azure;
-  font-size: 2.5rem;
-  text-align: left;
-  font-family: 'Inter', sans-serif;
+    background-image: url("../img/Endo3.JPG");
+    padding: 40px;
+    color: azure;
+    font-size: 2.5rem;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
 }
 
 nav{
@@ -34,4 +34,13 @@ section{
     min-height: 20vh;
     display: flex;
     flex-direction: column;
+}
+section .contacto{
+    display: flex;
+    align-content: center;
+}
+
+/*imagen del body de contacto*/
+.decontacto{
+    background-image: url(../img/fondo\ contac.png);
 }
